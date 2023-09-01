@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The basic level of graphic design</title>
+
+    <!--GOOGLE FONTS(MONTSERRAT) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+}
+:root{
+    --color-primary: #407c87;
+    --color-success:#010a57;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:#a9e2f5;
+    --color-white:#fff;
+    --color-light:#000;
+    --color-black:#070707;
+    --color-bg:#e0ddca;
+    --color-bg1:#eef1f6;
+    --color-bg2:#b11c30;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    transition: all 400ms ease;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-black);
+    background: var(--color-bg);
+}
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /*========== POPULAR COURSES ==============*/
+.courses{
+    margin-top: 0.5rem;
+    background-color: var(--color-bg);
+}
+
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course{
+    background: rgb(206, 192, 192);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course_info{
+    padding: 2rem;
+}
+
+.course_info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+a {
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+        /*===================FOOTER==================*/
+        footer {
+            background: var(--color-bg1);
+            padding-top: 5rem;
+            font-size: 0.9rem;
+        }
+
+
+        .footer_container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5rem;
+        }
+
+        .footer_container>div h4 {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer_1 p {
+            margin: 1rem 0 2rem;
+        }
+
+        footer ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_socials {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .footer_copyright {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 1.2rem 0;
+            border-top: 1px solid var(--color-bg2);
+        }
+
+        /*=============MEDIA QUERIES(TABLETS)
+============*/
+
+        @media screen and (max-width:1024px) {
+            .container {
+                width: var(--container-width-md);
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+
+            /*====================== NAVBAR ============*/
+            nav button {
+                display: inline-block;
+                background: transparent;
+                font-size: 1.8rem;
+                color: var(--color-white);
+                cursor: pointer;
+            }
+
+            nav button#close-menu-btn {
+                display: none;
+            }
+
+            .nav_menu {
+                position: fixed;
+                top: 5rem;
+                right: 5%;
+                height: fit-content;
+                width: 18rem;
+                flex-direction: column;
+                gap: 0;
+                display: none;
+            }
+
+            .nav_menu li {
+                width: 100%;
+                height: 5.8rem;
+                animation: animateNavItems 400ms linear forwards;
+                transform-origin: top right;
+                opacity: 0;
+            }
+
+            .nav_menu li:nth-child(2) {
+                animation-delay: 200ms;
+            }
+
+            .nav_menu li:nth-child(3) {
+                animation-delay: 400ms;
+            }
+
+            .nav_menu li:nth-child(4) {
+                animation-delay: 600ms;
+            }
+
+            @keyframes animateNavItems {
+                0% {
+                    transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+                }
+
+                100% {
+                    transform: rotateZ(0deg) rotateX(0deg) scale(1);
+                    opacity: l;
+                }
+
+            }
+
+            .nav_menu li a {
+                background: var(--color-primary);
+                box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                display: grid;
+                place-items: center;
+            }
+
+            .nav_menu li a:hover {
+                color: var(--color-white);
+                background: var(--color-bg2);
+
+            }
+
+            /*==================HEADER=================*/
+            header {
+                height: 52vh;
+                margin-bottom: 4rem;
+            }
+
+            .header_container {
+                gap: 0;
+                padding-bottom: 3rem;
+            }
+
+            /*===============CATEGORIES=========*/
+            .categories {
+                height: auto;
+            }
+
+            .categories_container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .categories_left {
+                margin-right: 0;
+            }
+
+            /*==================POPULAR COURSES==========*/
+            .courses {
+                margin-top: 0;
+            }
+
+            .courses_container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /*=================FAQs==================*/
+            .faqs_container {
+                grid-template-columns: 1fr;
+            }
+
+            .faq {
+                padding: 1.5rem;
+            }
+
+            /*=================FOOTER==================*/
+            .footer_container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        /*=================MEDIA QUERIES(PHONES)==================*/
+        @media screen and (max-width :600px) {
+            .container {
+                width: var(--container-width-sm);
+            }
+
+            /*=================NAVBAR==================*/
+            .nav_menu {
+                right: 3%;
+            }
+
+            /*=================HEADER==================*/
+            header {
+                height: 100vh;
+            }
+
+            .header_container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                margin-top: 0;
+            }
+
+            .header_left p {
+                margin-bottom: 1.3rem;
+            }
+
+            /*=================CATEGORIES==================*/
+            .categories_right {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.7rem;
+            }
+
+            .category {
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .category_icon {
+                margin-top: 4px;
+                display: inline-block;
+            }
+
+            /*=================FOOTER==================*/
+            .courses_container {
+                grid-template-columns: 1fr;
+            }
+
+            /*=================TESTIMONIALS==================*/
+            .testimonial_body {
+                padding: 1.2rem;
+            }
+
+            /*=================FOOTER==================*/
+            .footer_container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .footer_1 p {
+                margin: 1rem auto;
+            }
+
+            .footer_socials {
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-decoration: none; ">The basic level of graphic design for beginners.</h1>
+    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Categories for beginners</h2>
+
+    <section class="courses" id="courses">
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_info">
+                    <h4>Understanding Design Principles</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/understanding real.jpg" alt="Understanding">
+                    </div>
+                    <a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_info">
+                    <h4>Color-Wheel</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/color wheel.jpg" alt="color wheel">
+                    </div>
+                    <a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_info">
+                    <h4>Logo Designs</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/logo design.jpg" alt="Logo design">
+                    </div>
+                    <a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course_info">
+                    <h4>Print Designs</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/print design.jpg" alt="print">
+                    </div>
+                    <a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_info">
+                    <h4>Motion Graphic</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/motion.jpg" alt="motion">
+                    </div>
+                    <a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_info">
+                    <h4>Clients works</h4> <br>
+                    <div class="course_image">
+                        <img src="./images/client work.jpg" alt="work">
+                    </div><a href="categories.html" class="btm btn-primary" target="_self">Click On</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>VIPER</h4>
+                </a>
+                <p>welcome from my global website for learning about graphic design.</p>
+            </div>
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="primacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+95 4280 37 037</p>
+                    <p>pin252@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copying is not allowed</small>
+        </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

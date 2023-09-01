@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <!--GOOGLE FONTS(MONTSERRAT) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            color: black;
+        }
+
+        :root {
+            --color-primary: #407c87;
+            --color-success: #010a57;
+            --color-warning: #f7c94b;
+            --color-danger: #f75842;
+            --color-danger-variant: #a9e2f5;
+            --color-white: #fff;
+            --color-light: #000;
+            --color-black: #070707;
+            --color-bg: #e0ddca;
+            --color-bg1: #eef1f6;
+            --color-bg2: #b11c30;
+
+            --container-width-lg: 80%;
+            --container-width-md: 90%;
+            --container-width-sm: 94%;
+
+            transition: all 400ms ease;
+
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--color-black);
+            background: var(--color-bg);
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            display: block;
+            position: sticky;
+        }
+
+        li {
+            margin-top: 40px;
+        }
+
+        .link {
+            display: flex;
+            position: relative;
+            text-shadow: #1b6437;
+            padding: 10px;
+            float: left;
+            margin-right: 10px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .link:hover {
+            color: red;
+        }
+
+
+        /*===================FOOTER==================*/
+        footer {
+            background: var(--color-bg1);
+            padding-top: 5rem;
+            font-size: 0.9rem;
+        }
+
+
+        .footer_container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5rem;
+        }
+
+        .footer_container>div h4 {
+            margin-bottom: 1.2rem;
+        }
+
+        .footer_1 p {
+            margin: 1rem 0 2rem;
+        }
+
+        footer ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer_socials {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .footer_copyright {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 1.2rem 0;
+            border-top: 1px solid var(--color-bg2);
+        }
+
+        /*=============MEDIA QUERIES(TABLETS)
+============*/
+
+        @media screen and (max-width:1024px) {
+            div {
+                width: var(--container-width-md);
+            }
+
+            .container {
+                width: var(--container-width-md);
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+            /*=================FOOTER==================*/
+            .courses_container {
+                grid-template-columns: 1fr;
+            }
+
+            /*=================TESTIMONIALS==================*/
+            .testimonial_body {
+                padding: 1.2rem;
+            }
+
+            /*=================FOOTER==================*/
+            .footer_container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .footer_1 p {
+                margin: 1rem auto;
+            }
+
+            .footer_socials {
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tag">
+        <h4 style="text-align: center;">Be Sure To Learn This Categories</h4>
+        <ul>
+            <li><a href="#understanding" class="link">Understanding design Principle</a></li>
+            <li><a href="#color-wheel" class="link">Color-wheel</a></li>
+            <li><a href="#logo" class="link">Logo Design</a></li>
+            <li><a href="#print" class="link">Print Design</a></li>
+            <li><a href="#motion" class="link">Motion Design</a></li>
+            <li><a href="#client" class="link">Client works</a></li>
+        </ul>
+    </div><br><br><br><br><br><br>
+
+    <div class="understanding" id="understanding">
+        <h4>Here you can learn about understanding Design Principle to improve your design skills:</h4><br>
+        <p>At first, you must know how is actually work Principle in graphic design creations.
+            After you've watched that video carefully, you will not regret for taking your times upon this lesson.</p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UmHMVU6dceA" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+        <p>Understanding the principles of design and how they interact is vital for both new and expert designers.
+            Implementing them purposefully is key to creating visually appealing, functional designs.
+            <br>Once a designer understands the basic design principles, they can more intentionally combine
+            those principles to create designs that are aesthetically pleasing and functional.
+        </p><br><br>
+        <hr>
+    </div>
+
+    <div class="color-wheel" id="color-wheel">
+        <h4>Congratutation my dear! You had watched above video and your next step is here:</h4><br>
+        <p>If you really enjoy to learn about graphic design, I glap for that and
+            then you should learn about color wheel after understanding design principle.</p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vS5H1PoptFU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe><br>
+        <p>Refer to the color wheel chart above to determine between primary, secondary, and tertiary colors. Primary
+            colors are red, blue, and yellow. These colors are pure, which means you can't create them from other
+            colors, and all other colors are created from them. Between the equidistant primary color spokes on the
+            color wheel are secondary colors: orange, green, and violet. These hues line up between the primaries on the
+            color wheel because they are formed when equal parts of two primary colors are combined.
+            Tertiary colors are formed by mixing a primary color with a secondary color that's next to it on the color
+            wheel. With each blending (primary with primary, then primary with secondary), the resulting hues become
+            less vivid.
+        </p><br><br>
+        <hr>
+    </div>
+
+    <div class="logo" id="logo">
+        <h4>Here this video is for logo design creation tutorial:</h4><br>
+        <p>Designers know the importance of a solid first impression, which is why graphic designer logos are some of
+            the most creative and compelling logos out there. At a glance, the right logo builds trust in your design
+            skills and sets you apart from the competition.</p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7no7qrTSRvI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <p>If you are looking for graphic design logo ideas, you have come to the right place! Browse logos from design
+            agencies and freelancers of every specialty and niche, to see just how creative you can get with your own
+            logo. Then, when you are ready to take the next step, use our graphic design logo maker to create a brand
+            new
+            logo that shows off your design eye.</p>
+        <br><br>
+        <hr>
+    </div>
+
+    <div class="print" id="print">
+        <h4>You almostly can make it.Here this is for print designs creation tutorial more:</h4><br>
+        <p>Print design is a subset of graphic design where the design is first created digitally then printed out.
+            Print design is mostly used for branding and marketing purposes. Business cards, flyers, and packaging are
+            all part of print design.
+        </p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1ui-UEkBZ8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe><br>
+        <p>Print design should not be confused with printing. Printing is the process of transforming the digital design
+            into hard copy on materials like paper, cards, or boxes. Print design is the design that is going to be
+            printed on a physical publication. It is important to distinguish the two as clients might expect the
+            designer to print the designs as well.</p><br><br>
+        <hr>
+    </div>
+
+    <div class="motion" id="motion">
+        <h4>I really really glap you my dear! You had watched above video and your next step is here:</h4><br>
+        <p>Vector graphics are computer images created using a sequence of commands or mathematical statements that
+            place lines and shapes in a two-dimensional or three-dimensional space.
+            In vector graphics, a graphic artist's work, or file, is created and saved as a sequence of vector
+            statements. A vector graphic file describes a series of points to be connected.
+            These files are sometimes called geometric files. Images created with tools such as Adobe Illustrator and
+            Corel's CorelDRAW are usually vector image files.
+            Simplified, vector graphics are like connect-the-dots drawings.</p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GfLDJnPOWoE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe><br>
+        <p>Motion graphics (sometimes mograph) are pieces of animation (https://en.m.wikipedia.org/wiki/Animation) or
+            digital footage (https://en.m.wikipedia.org/wiki/Footage) which create the illusion
+            (https://en.m.wikipedia.org/wiki/Illusion) of motion (https://en.m.wikipedia.org/wiki/Motion_(physics)) or
+            rotation, and are usually combined with audio
+            (https://en.m.wikipedia.org/wiki/Sound_recording_and_reproduction) for use in multimedia
+            (https://en.m.wikipedia.org/wiki/Multimedia) projects. Motion graphics are usually displayed via electronic
+            media (https://en.m.wikipedia.org/wiki/Electronic_media) technology, but may also be displayed via manual
+            powered technology (e.g. thaumatrope, (https://en.m.wikipedia.org/wiki/Thaumatrope) phenakistoscope,
+            (https://en.m.wikipedia.org/wiki/Phenakistoscope) stroboscope, (https://en.m.wikipedia.org/wiki/Stroboscope)
+            zoetrope, (https://en.m.wikipedia.org/wiki/Zoetrope) praxinoscope,
+            (https://en.m.wikipedia.org/wiki/Praxinoscope) flip book). (https://en.m.wikipedia.org/wiki/Flip_book) The
+            term distinguishes static graphics from those with a transforming appearance over time, without
+            over-specifying the form.[1] While any form of experimental or abstract animation can be called motion
+            graphics, the term typically more explicitly refers to the commercial application of animation and effects
+            to video, film, TV, and interactive applications.</p><br><br>
+        <hr>
+    </div>
+
+    <div class="client" id="client">
+        <h4>You finally reach this is the last lesson of basic graphic design:</h4><br>
+        <p>Struggling to get clients? Well, It is normal. Everybody struggles to kick start any business even myself.
+            Freelance is a great legit way to get money. But getting clients will lead you to more money. So, In this
+            article, you will learn how to get clients as a freelance graphic designer.
+            In the Freelance business, getting clients is an art, If getting a client is an art you spend time and
+            consistency to make that art. Based on my 6 months of experience, I will tell you to step by step process of
+            how
+            to get more clients.
+            Remember, To get clients, you should put your 200% effort and consistency.
+        </p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uNhZDWuh8Xw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe><br>
+        <p>Freelancing is working for yourself, as opposed to working for someone else. So, Freelancers are
+            self-employed professionals who work on a project-by-project basis. You can be your boss.
+            In other words, Freelancers accept payment in return for providing some sort of service.
+            That agreement is generally part-time or short-term. Moreover, You can either do it part-time or you can do
+            it as a full-time job.
+            freelance jobs offer exceptional flexibility, independence, and income opportunities. Moreover, You can earn
+            hefty annual compensation, provided you have the right skills, qualifications, and experience.
+        </p><br><br>
+        <hr>
+    </div>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>VIPER</h4>
+                </a>
+                <p>welcome from my global website for learning about graphic design.</p>
+            </div>
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Primacy</h4>
+                <ul class="primacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+95 4280 37 037</p>
+                    <p>pin252@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copying is not allowed</small>
+        </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
