@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     border: 0;
@@ -809,6 +809,17 @@ footer ul li a:hover{
         width: 250px;
         height: 300px;
     }
+
+}
+@media screen and (max-width:400px){
+    .creations_image img{
+        width: 220px;
+        height: 250px;
+    }
+    .photo{
+        width:100px;
+    }
+
 }
 .course_image img{
     height: 300px;
